@@ -3,7 +3,7 @@ import { ofetch } from "ofetch";
 // ⚠️ 这里填你的API Key
 //这是deepseek的密钥
 // const API_KEY = "sk-1543af2e5a244be092699bf0410f80c2";
-const API_KEY = "sk-ohsucgleyrpkxrfyexfynjshimvyhujxgfepizshidrgmmoi";
+const API_KEY = import.meta.env.VITE_SILICON_API_KEY;
 
 export const fetchChatStream = async (messages, onMessage) => {
   try {
