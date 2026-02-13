@@ -4,6 +4,8 @@ import { ofetch } from "ofetch";
 //这是deepseek的密钥
 // const API_KEY = "sk-1543af2e5a244be092699bf0410f80c2";
 const API_KEY = import.meta.env.VITE_SILICON_API_KEY;
+console.log("API Key exists:", !!API_KEY); // 输出 true 或 false
+console.log("API Key prefix:", API_KEY?.substring(0, 5)); // 输出 'sf-' 确认格式
 
 export const fetchChatStream = async (messages, onMessage) => {
   try {
