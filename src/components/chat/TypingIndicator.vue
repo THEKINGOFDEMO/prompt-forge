@@ -16,7 +16,7 @@
 .typing-indicator span {
   width: 8px;
   height: 8px;
-  background: #909399;
+  background: var(--text-tertiary);
   border-radius: 50%;
   animation: typing 1.4s infinite;
 }

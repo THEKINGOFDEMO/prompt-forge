@@ -1,13 +1,18 @@
 <template>
-  <n-config-provider>
+  <n-config-provider :theme="themeStore.naiveTheme">
     <n-message-provider>
-      <div style="padding: 20px">
-        <ChatTest />
-      </div>
+      <router-view />
     </n-message-provider>
   </n-config-provider>
 </template>
 
 <script setup>
-import ChatTest from "./components/ChatTest.vue";
+import { onMounted } from "vue";
+import { useThemeStore } from "./stores/modules/theme";
+
+const themeStore = useThemeStore();
+
+onMounted(() => {
+  themeStore.applyTheme();
+});
 </script>

@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #18a058;
+  --primary-hover: #36ad6a;
+  --bg-color: #ffffff;
+  --sidebar-bg: #f9f9f9;
+  --border-color: #eaeaea;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-tertiary: #999999;
+  --message-bg: #f5f5f5;
+  --user-message-bg: #18a058;
+  --user-message-text: #ffffff;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+}
+
+.dark {
+  --primary-color: #63e2b7;
+  --primary-hover: #7fe7c4;
+  --bg-color: #1e1e1e;
+  --sidebar-bg: #252525;
+  --border-color: #404040;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #808080;
+  --message-bg: #2d2d2d;
+  --user-message-bg: #1e3a2a;
+  --user-message-text: #e0e0e0;
+}

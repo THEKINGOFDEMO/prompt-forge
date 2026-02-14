@@ -1,9 +1,13 @@
 import { createApp } from "vue";
-import "./style.css";
 import App from "./App.vue";
+import router from "./router";
 import { setupPlugins } from "./plugins";
+import "./assets/styles/global.css";
+import "./assets/styles/variables.css";
 
 const app = createApp(App);
-//一键注册所有组件
+
+app.use(router);
 setupPlugins(app);
+
 app.mount("#app");
